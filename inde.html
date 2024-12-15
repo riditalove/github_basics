@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="tracker-style.css" />
+    <title>tracker</title>
+  </head>
+  <body>
+    <h1>Track Your Period</h1>
+    
+      
+      <form >
+        <div class="first">
+            <h2>When did your last period start?</h2>
+            <input type="date" name="date" id="date" />
+        </div>
+        
+        <div class="second">
+          <label for="duration">How many days did it last?</label>
+          <input
+            type="number"
+            name="duration"
+            id="duration"
+            min="0"
+            max="30"
+            value="3"
+          />
+          <label for="cycle-length">Average cycle length (days)</label>
+          <input
+            type="number"
+            name="cycle-length"
+            id="cycle-length"
+            min="0"
+            max="60"
+            value="28"
+          />
+        </div>
+        <div class="BUT">
+          <button type="button" id="submit-btn">See Results</button>
+        </div>
+      </form>
+
+      <section class="Results">
+        <h2>Your Next Period Will Be </h2>
+
+        <p id="Date"></p>
+        <p id="Month"></p>
+        <p id="Year"></p>
+
+      </section>
+
+    <script src="app.js"></script>
+  </body>
+</html>
